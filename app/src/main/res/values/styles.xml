@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--Input Floating Label-->
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorLabel</item>
+    </style>
+</resources>

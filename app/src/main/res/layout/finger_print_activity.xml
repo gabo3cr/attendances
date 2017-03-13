@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/finger_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/controller_active"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/controller_2"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false" />
+
+        <ImageView
+            android:id="@+id/finger_print"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/controller_active"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/finger_print" />
+
+        <RelativeLayout
+            android:id="@+id/finger_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/finger_print"
+            android:layout_marginTop="50sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:text="Configure RFID cards to also allow access by radio frequency"
+                android:textAlignment="center"
+                android:textColor="@color/colorLabel"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/finger_label"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/login_material_primary_button"
+            android:elevation="5dp"
+            android:paddingBottom="15sp"
+            android:paddingTop="15sp"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
