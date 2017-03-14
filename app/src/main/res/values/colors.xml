@@ -4,8 +4,11 @@
     <color name="colorPrimaryDark">#212121</color>
     <color name="colorAccent">#1ECDFE</color>
     <color name="white">#FFF</color>
+    <color name="borderColorSearch">#BCBDBD</color>
     <color name="colorLabel">#8f8f8f</color>
     <color name="textColorLight">#ccc</color>
     <color name="green">#B8E986</color>
+    <color name="textColor">#1D1D26</color>
+    <color name="black">#000000</color>
 
 </resources>
