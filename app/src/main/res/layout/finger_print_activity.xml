@@ -6,7 +6,6 @@
     android:background="@color/white">
 
     <RelativeLayout
-        android:padding="5dp"
         android:id="@+id/finger_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -56,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/finger_label"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="20sp"
             android:background="@drawable/login_material_primary_button"
             android:elevation="5dp"
             android:paddingBottom="15sp"

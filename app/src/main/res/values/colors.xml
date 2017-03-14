@@ -6,5 +6,6 @@
     <color name="white">#FFF</color>
     <color name="colorLabel">#8f8f8f</color>
     <color name="textColorLight">#ccc</color>
+    <color name="green">#B8E986</color>
 
 </resources>
