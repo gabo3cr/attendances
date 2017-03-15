@@ -74,14 +74,14 @@
             android:layout_width="match_parent"
             android:id="@+id/imageView3"
             android:src="@drawable/thumb_up"
-            android:layout_height="80dp" />
+            android:layout_height="90dp" />
 
         <Button
-            android:text="Button"
+            android:text="REGISTRAR ESTUDIANTE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:textColor="@android:color/white"
             android:background="@drawable/button_accent" />
     </LinearLayout>
