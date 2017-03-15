@@ -1,178 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/white">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reaxium.t4ss.attendance.MainActivity"
+    android:background="@android:color/white">
 
     <RelativeLayout
+        android:id="@+id/brand_header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        android:orientation="vertical">
+        android:layout_height="150dp">
 
         <ImageView
-            android:paddingBottom="20dp"
-            android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            app:srcCompat="@drawable/circle_big_mask"
+            android:id="@+id/header_bg"
             android:layout_alignParentTop="true"
-            android:src="@drawable/new_yellow_banner" />
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginRight="-100dp"
+            android:layout_height="300dp" />
 
-        <ImageView
-            android:id="@+id/icon_attendance"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="45dp"
-            android:src="@drawable/school_attendance_icon" />
-
-        <TextView
-            android:id="@+id/firstText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/icon_attendance"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10sp"
-            android:text="REAXIUM"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/secondText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/firstText"
-            android:layout_centerHorizontal="true"
-            android:text="SCHOOL"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="23sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/secondText"
-            android:layout_centerHorizontal="true"
-            android:text="ATTENDANCE"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@+id/logo"
-            android:padding="10sp">
-
-            <!-- Email Label -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_centerInParent="true"
+            android:padding="15dp">
+            <ImageView
+                app:srcCompat="@drawable/logo_icon"
+                android:id="@+id/brand_logo"
+                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="User Name"
-                android:textAlignment="center"
-                android:textColor="@color/colorLabel"
-                android:textSize="15sp" />
-
-
-            <EditText
-                android:id="@+id/username_input"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginTop="15sp"
-                android:background="@drawable/shape_border"
-                android:gravity="center"
-                android:hint="Username"
-                android:inputType="textEmailAddress"
-                android:paddingBottom="20sp"
-                android:paddingLeft="10sp"
-                android:paddingRight="10sp"
-                android:paddingTop="10sp"
-                android:text="Hcarrillo@t4ss.com"
-                android:textSize="15sp" />
-
-
-            <TextView
-                android:id="@+id/password_label"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/username_input"
+                android:layout_height="1dp"
+                android:layout_weight="55" />
+
+            <ImageView
+                app:srcCompat="@drawable/brand_name"
+                android:layout_below="@+id/brand_logo"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10sp"
-                android:text="Password"
-                android:textAlignment="center"
-                android:textColor="@color/colorLabel"
-                android:textSize="15sp" />
+                android:layout_marginTop="6dp"
+                android:id="@+id/brand_name"
+                android:layout_width="100dp"
+                android:layout_weight="20"
+                android:layout_height="1dp" />
+        </LinearLayout>
 
-
-            <EditText
-                android:id="@+id/password_input"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/password_label"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:inputType="textPassword"
-                android:paddingBottom="20sp"
-                android:paddingLeft="10sp"
-                android:paddingRight="10sp"
-                android:paddingTop="10sp"
-                android:text="1234568ASDASD"
-                android:textSize="15sp" />
-
-            <RelativeLayout
-
-                android:id="@+id/box_input"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/password_input">
-
-                <TextView
-                    android:id="@+id/forget_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:text="FORGET PASSWORD?"
-                    android:textColor="@color/colorLabel"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/remember_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:text="SING IN?"
-                    android:textColor="@color/colorLabel"
-                    android:textSize="12sp" />
-
-            </RelativeLayout>
-            <Button
-                android:textAlignment="center"
-                android:layout_below="@id/box_input"
-                android:id="@+id/button_login"
-                android:textColor="@color/white"
-                android:elevation="5dp"
-                android:background="@drawable/login_material_primary_button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20sp"
-                android:paddingTop="12sp"
-                android:paddingBottom="12sp"
-                android:textSize="13sp"
-                android:textAllCaps="true"
-                android:text="Login" />
-
-        </RelativeLayout>
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/brand_header"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_above="@+id/loginLinks">
 
-</ScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de Usuario"
+                android:gravity="center_horizontal"
+                android:textSize="8sp"
+                android:textColor="@color/textColorSecondary"
+                android:alpha="0.75" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:text="emisael@t4ss.com"
+                android:ems="10"
+                android:id="@+id/username"
+                android:gravity="center_vertical|center_horizontal"
+                android:theme="@style/MyEditTextLine"
+                android:textSize="10sp"
+                android:layout_width="200dp"
+                android:paddingTop="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clave de Acceso"
+                android:gravity="center_horizontal"
+                android:textSize="8sp"
+                android:textColor="@color/textColorSecondary"
+                android:alpha="0.75" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="mdkemdke"
+                android:ems="10"
+                android:id="@+id/password"
+                android:gravity="center_vertical|center_horizontal"
+                android:theme="@style/MyEditTextLine"
+                android:textSize="10sp"
+                android:layout_width="200dp"
+                android:paddingTop="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/loginBtn"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿OLVIDASTE LA CLAVE?"
+            android:layout_weight="50"
+            android:gravity="left"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRARME"
+            android:layout_weight="50"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:text="ENTRAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:background="@drawable/button_black"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:minHeight="32dp" />
+
+</RelativeLayout>
