@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/controller_2"
             android:adjustViewBounds="false"
             android:cropToPadding="false" />
 

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:background="@drawable/circle_button_accent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:elevation="10dp"
+                android:id="@+id/updateProfilePictureBtn" />
+
+            <ImageView
+                app:srcCompat="@drawable/add_icon"
+                android:elevation="4dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="9dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile_picture"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_width="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <!-- Student Basic Data -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:text="Datos Básicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/textColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Emisael"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Jesus"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Carrera"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Ramones"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FECHA DE NACIMIENTO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp">
+
+                    <ImageView
+                        android:src="@drawable/calendar_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:text="Oct 3, 1990"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginLeft="8dp"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/editTextColor"
+                    android:layout_height="2px">
+
+                </View>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEXO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:text="Masculino"
+                                android:textColor="@color/textColor"
+                                app:buttonTint="@color/colorPrimaryDark"
+                                android:gravity="center_vertical|center_horizontal|start"
+                                android:scaleX="0.9"
+                                android:scaleY="0.9" />
+                            <RadioButton
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:text="Femenino"
+                                android:textColor="@color/textColor"
+                                app:buttonTint="@color/colorPrimaryDark"
+                                android:gravity="center_vertical|center_horizontal|start"
+                                android:scaleX="0.9"
+                                android:scaleY="0.9" />
+                        </LinearLayout>
+                    </RadioGroup>
+
+                <View
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/editTextColor"
+                    android:layout_height="2px">
+
+                </View>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- End Student Basic Data -->
+
+        <!-- Student Guardian's Data -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:text="Datos del Representante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/textColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Emilia"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Coromoto"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Ramones"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="Guardia"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NUMERO DE TELEFONO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="+584125178020"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CORREO ELECTRONICO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"
+                    android:layout_marginLeft="4dp" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:theme="@style/MyEditTextLine"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:text="emisael@t4ss.com"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <!-- End Student Guardian's Data -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
