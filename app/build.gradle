@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.1"
 
     defaultConfig {
-        applicationId "com.danielme.textinputlayout"
+        applicationId "com.example.gabrielcarrillo.attendances"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
