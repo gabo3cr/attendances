@@ -7,11 +7,14 @@
     <color name="colorPrimaryLight">#FEEBB3</color>
     <color name="textColor">#212121</color>
     <color name="textColorSecondary">#757575</color>
-    <color name="dividerColor">#bdbdbd</color>
+    <color name="dividerColor">#bcbcbc</color>
     <color name="darkIconsColor">#212121</color>
 
     <color name="lightGray">#dddddd</color>
+    <color name="verylightGray">#f6f6f6</color>
     <color name="editTextColor">#f3f3f3</color>
     <color name="colorPrimary50">#77e7af00</color>
+
+    <color name="green">#B8E986</color>
 
 </resources>
