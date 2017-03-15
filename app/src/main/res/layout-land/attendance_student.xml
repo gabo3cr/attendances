@@ -1,74 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@android:color/white">
 
     <RelativeLayout
-        android:id="@+id/finger_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:clickable="true"
         android:orientation="vertical">
 
-
         <ImageView
+            android:padding="5dp"
             android:id="@+id/controller_active"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:adjustViewBounds="false"
-            android:cropToPadding="false"
-            android:src="@drawable/circle_white" />
-
-        <ImageView
-            android:id="@+id/rfid_box"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_alignParentTop="true"
-            android:layout_below="@id/controller_active"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="170dp"
-            android:src="@drawable/attendances_student" />
+            android:src="@drawable/controller_2"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false" />
 
         <RelativeLayout
-            android:id="@+id/rfid_label"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/rfid_box"
-            android:layout_marginTop="50sp">
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_below="@id/controller_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <TextView
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/checklist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="The attendance of your students is automated, you can see this activity at any time."
+                android:text="La asistencia de tus estudiantes es automatizada, puedes ver en cualquier momento esta actividad."
                 android:textAlignment="center"
-                android:textColor="@color/textColorSecondary"
-                android:textSize="25sp" />
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
 
+            <ImageView
+                android:id="@+id/checklist"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/attendances_student"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
 
         <Button
-            android:id="@+id/button_next"
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:layout_below="@id/rfid_label"
-            android:layout_marginTop="75sp"
-            android:background="@drawable/login_material_primary_button"
-            android:elevation="5dp"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="15sp"
-            android:paddingTop="15sp"
-            android:text="Continue"
-            android:textAlignment="center"
-            android:textAllCaps="true"
+            android:text="Siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/finish_step"
+            android:background="@drawable/button_black"
+            android:layout_alignParentBottom="true"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
-
+            android:textSize="12sp" />
 
     </RelativeLayout>
 
-</ScrollView>
+</LinearLayout>
