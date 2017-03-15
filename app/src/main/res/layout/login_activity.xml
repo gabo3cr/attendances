@@ -113,6 +113,16 @@
 
     </LinearLayout>
 
+    <Button
+        android:text="ENTRAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:background="@drawable/button_black"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
     <LinearLayout
         android:id="@+id/loginLinks"
         android:layout_width="match_parent"
@@ -139,15 +149,5 @@
             android:textColor="@color/colorAccent"
             android:textSize="10sp" />
     </LinearLayout>
-
-    <Button
-        android:text="ENTRAR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/loginBtn"
-        android:background="@drawable/button_black"
-        android:layout_alignParentBottom="true"
-        android:textColor="@android:color/white"
-        android:textSize="12sp" />
 
 </RelativeLayout>

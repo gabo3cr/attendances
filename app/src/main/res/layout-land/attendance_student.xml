@@ -21,7 +21,7 @@
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="false"
             android:cropToPadding="false"
-            android:src="@drawable/controller_3" />
+            android:src="@drawable/circle_white" />
 
         <ImageView
             android:id="@+id/rfid_box"

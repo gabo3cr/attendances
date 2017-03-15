@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/controller_2"
+            android:src="@drawable/circle_white"
             android:adjustViewBounds="false"
             android:cropToPadding="false" />
 
