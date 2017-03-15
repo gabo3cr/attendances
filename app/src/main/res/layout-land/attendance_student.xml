@@ -53,12 +53,13 @@
 
         <Button
             android:id="@+id/button_next"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="match_parent"
             android:layout_below="@id/rfid_label"
-            android:layout_marginTop="275sp"
+            android:layout_marginTop="75sp"
             android:background="@drawable/login_material_primary_button"
             android:elevation="5dp"
+            android:layout_centerHorizontal="true"
             android:paddingBottom="15sp"
             android:paddingTop="15sp"
             android:text="Continue"

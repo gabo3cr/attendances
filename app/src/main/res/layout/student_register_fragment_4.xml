@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <!-- Student Basic Data -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:id="@+id/basicDataSummary">
+
+            <TextView
+                android:text="Datos Básicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESUMEN"
+                android:gravity="center_horizontal"
+                android:textSize="10sp"
+                android:textColor="@color/textColorSecondary"
+                android:alpha="0.75"
+                android:layout_marginLeft="4dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile_picture"
+                app:civ_border_width="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:text="Emisael"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:text="Jesus"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:text="Carrera"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:text="Ramones"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FECHA DE NACIMIENTO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:text="Oct 3, 1990"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEXO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Masculino"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- End Student Basic Data -->
+
+        <!-- Student Guardian's Data -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/guardianSummary"
+            android:visibility="visible">
+
+            <TextView
+                android:text="Datos del Representante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Emilia"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO NOMBRE"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Coromoto"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIMER APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Ramones"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGUNDO APELLIDO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Guardia"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NUMERO DE TELEFONO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="+584125178020"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CORREO ELECTRONICO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:text="emisael@t4ss.com"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- End Student Guardian's Data -->
+
+        <!-- Biometric Validation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/biometricValidation">
+
+            <TextView
+                android:text="Datos Biométricos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/textColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HUELLA DIGITAL DEL PULGAR DERECHO"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75" />
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:foreground="@drawable/box_container"
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fingerprint_real"
+                        android:background="@android:color/white"
+                        android:foreground="@color/colorPrimary50" />
+
+                    <ImageView
+                        android:src="@drawable/tick_icon_lg"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- End Biometric Validation -->
+
+        <!-- RFID Card Validation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/rfidCardValidation"
+            android:layout_marginTop="40dp"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:text="Configuración de la Tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/textColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CARNET DE IDENTIFICACION"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:alpha="0.75" />
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:foreground="@drawable/box_container"
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rfid_signal"
+                        android:background="@android:color/white"
+                        android:foreground="@color/colorPrimary50"
+                        android:padding="15dp" />
+
+                    <ImageView
+                        android:src="@drawable/tick_icon_lg"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- End Biometric Validation -->
+
+    </LinearLayout>
+
+</ScrollView>
