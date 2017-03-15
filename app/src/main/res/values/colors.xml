@@ -10,6 +10,7 @@
     <color name="dividerColor">#bcbcbc</color>
     <color name="darkIconsColor">#212121</color>
 
+    <color name="softGray">#aaaaaa</color>
     <color name="lightGray">#dddddd</color>
     <color name="verylightGray">#f6f6f6</color>
     <color name="editTextColor">#f3f3f3</color>
