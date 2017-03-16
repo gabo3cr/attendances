@@ -29,7 +29,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/textColor"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="4dp" />
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,7 +39,8 @@
                 android:textSize="10sp"
                 android:textColor="@color/textColorSecondary"
                 android:alpha="0.75"
-                android:layout_marginLeft="4dp" />
+                android:layout_marginLeft="4dp"
+                android:textStyle="normal|bold" />
 
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:layout_width="120dp"
@@ -221,7 +222,8 @@
                 android:layout_marginBottom="20dp"
                 android:textSize="18sp"
                 android:textColor="@color/textColor"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textStyle="normal|bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -395,7 +397,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:textSize="18sp"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textStyle="normal|bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -458,7 +461,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:textSize="18sp"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textStyle="normal|bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

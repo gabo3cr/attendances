@@ -28,7 +28,7 @@
             android:orientation="vertical"
             android:gravity="center_vertical|center_horizontal|center"
             android:layout_centerInParent="true"
-            android:padding="15dp">
+            android:padding="20dp">
             <ImageView
                 app:srcCompat="@drawable/logo_icon"
                 android:id="@+id/brand_logo"
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_above="@id/loginBtn"
-        android:paddingBottom="10dp"
+        android:paddingBottom="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
         <TextView
