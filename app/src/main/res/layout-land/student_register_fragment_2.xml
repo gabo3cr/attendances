@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
@@ -15,11 +16,13 @@
             android:layout_height="match_parent"
             android:id="@+id/studentProfileLayout"
             android:layout_weight="40"
-            android:layout_width="0dp">
+            android:layout_width="0dp"
+            android:background="@drawable/container_shadow_right"
+            android:paddingRight="6dp">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:src="@drawable/profile_picture"
+                android:src="@drawable/child2"
                 android:id="@+id/studentPicture"
                 android:scaleType="centerCrop"
                 android:layout_height="match_parent" />
@@ -27,20 +30,23 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_alignParentBottom="true"
-                android:layout_height="200dp">
-                <ImageView
+                android:layout_height="100dp">
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:src="@drawable/gradient_white_transparent"
-                    android:id="@+id/gradientStudentPicture"
                     android:layout_height="match_parent"
-                    android:alpha="0.8" />
+                    android:background="@android:color/white"
+                    android:alpha="0.9">
+
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp">
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -49,8 +55,9 @@
                         android:textColor="@color/textColor"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textSize="20dp"
-                        android:alpha="0.9" />
+                        android:alpha="0.9"
+                        android:textStyle="normal|bold"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -58,27 +65,25 @@
                         android:textColor="@color/textColorSecondary"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         android:alpha="0.9" />
 
                 </LinearLayout>
+
             </RelativeLayout>
 
         </RelativeLayout>
 
-        <View
-            android:layout_height="match_parent"
-            android:background="@color/lightGray"
-            android:layout_width="1dp" />
-
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:gravity="center_horizontal"
-            android:layout_weight="60">
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="60"
+            android:background="@color/verylightGray"
+            android:paddingTop="20dp"
+            android:paddingBottom="40dp"
+            android:layout_margin="20dp">
 
             <TextView
                 android:text="Datos Biométricos"
@@ -86,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
                 android:layout_marginBottom="20dp"
-                android:textSize="30sp"
+                android:textSize="36sp"
                 android:textColor="@color/textColor" />
 
             <LinearLayout
@@ -99,21 +104,22 @@
                     android:layout_height="wrap_content"
                     android:text="HUELLA DIGITAL DEL PULGAR DERECHO"
                     android:gravity="center_horizontal"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:textColor="@color/textColorSecondary"
                     android:alpha="0.75" />
 
-                <RelativeLayout android:layout_width="178dp"
-                    android:layout_height="178dp"
-                    android:layout_marginTop="40dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp">
 
                     <RelativeLayout
                         android:foreground="@drawable/box_container"
                         android:background="@color/lightGray"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:layout_width="200dp"
-                        android:layout_height="200dp">
+                        android:layout_width="300dp"
+                        android:layout_height="300dp">
 
                         <TextView
                             android:text="Esperando lectura de huella"
@@ -122,10 +128,10 @@
                             android:layout_centerInParent="true"
                             android:layout_centerHorizontal="true"
                             android:textStyle="normal|italic"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:textColor="@color/textColorSecondary"
                             android:gravity="center_horizontal"
-                            android:layout_width="120dp" />
+                            android:layout_width="160dp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -140,8 +146,8 @@
                                 android:layout_marginBottom="10dp"
                                 android:layout_marginLeft="4dp"
                                 android:layout_marginRight="4dp"
-                                android:layout_width="6dp"
-                                android:layout_height="6dp" />
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
 
                             <ImageView
                                 app:srcCompat="@drawable/circle_white"
@@ -149,9 +155,9 @@
                                 android:layout_marginBottom="10dp"
                                 android:layout_marginLeft="4dp"
                                 android:layout_marginRight="4dp"
-                                android:layout_width="6dp"
-                                android:layout_height="6dp"
-                                android:tint="@color/dividerColor" />
+                                android:tint="@color/dividerColor"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
 
                             <ImageView
                                 app:srcCompat="@drawable/circle_white"
@@ -159,9 +165,9 @@
                                 android:layout_marginBottom="10dp"
                                 android:layout_marginLeft="4dp"
                                 android:layout_marginRight="4dp"
-                                android:layout_width="6dp"
-                                android:layout_height="6dp"
-                                android:tint="@color/dividerColor" />
+                                android:tint="@color/dividerColor"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
                         </LinearLayout>
 
                         <ImageView
