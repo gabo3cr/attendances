@@ -167,7 +167,7 @@
                             android:src="@drawable/rfid_signal"
                             android:background="@android:color/white"
                             android:id="@+id/studentRFIDCard"
-                            android:visibility="visible"
+                            android:visibility="invisible"
                             android:padding="15dp" />
 
                     </RelativeLayout>
@@ -182,7 +182,7 @@
                         android:layout_marginBottom="4dp"
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:visibility="visible">
+                        android:visibility="invisible">
                         <ImageView
                             android:src="@drawable/tick_icon_sm"
                             android:layout_gravity="center_vertical|center_horizontal"
