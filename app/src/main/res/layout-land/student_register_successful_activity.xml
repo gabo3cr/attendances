@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reaxium.t4ss.attendance.MainActivity"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/brand_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/circle_big_mask"
+            android:id="@+id/header_bg"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-300dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginRight="-100dp"
+            android:layout_height="600dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="100dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:textSize="50dp"
+                android:text="Bien Hecho!"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:text="SE HA REGISTRADO EL ESTUDIANTE" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/header_bg"
+            android:src="@drawable/clover"
+            android:layout_marginTop="-63dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/brand_header"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:text="REGISTRAR OTRO ESTUDIANTE"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerStudentBtn"
+            android:background="@drawable/button_black_cornered"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_width="330dp"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:text="REGRESAR AL MENU PRINCIPAL"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainMenuBtn"
+            android:background="@drawable/button_white"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:layout_width="330dp"
+            android:layout_marginTop="20dp"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>
