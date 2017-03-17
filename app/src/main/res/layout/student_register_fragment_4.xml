@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="RESUMEN"
                 android:gravity="center_horizontal"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:textColor="@color/textColorSecondary"
                 android:alpha="0.75"
                 android:layout_marginLeft="4dp"
