@@ -13,8 +13,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@drawable/wizard_container"
-        android:paddingTop="4dp"
-        android:orientation="horizontal">
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/wizardControlBar">
 
         <Button
             android:text="ANTERIOR"
