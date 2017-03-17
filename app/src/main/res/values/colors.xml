@@ -3,7 +3,7 @@
 
     <color name="colorPrimary">#e7af00</color>
     <color name="colorPrimaryDark">#957c30</color>
-    <color name="colorAccent">#1ECDFE</color>
+    <color name="colorAccent">#1ecdfe</color>
     <color name="colorPrimaryLight">#FEEBB3</color>
     <color name="textColor">#212121</color>
     <color name="textColorSecondary">#757575</color>
@@ -20,5 +20,10 @@
     <color name="red">#FF1E39</color>
     <color name="black90">#e6000000</color>
     <color name="white98">#faffffff</color>
+
+    <color name="wildWatermelon">#FF717D</color>
+    <color name="wildWatermelon05">#0dff717d</color>
+    <color name="hanBlue">#437BD1</color>
+    <color name="hanBlue05">#0d437BD1</color>
 
 </resources>
