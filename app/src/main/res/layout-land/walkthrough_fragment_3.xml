@@ -47,7 +47,7 @@
     </LinearLayout>
 
     <Button
-        android:text="Continuar"
+        android:text="@string/btn_continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/nextBtn"
@@ -74,7 +74,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="La asistencia de tus estudiantes es automatizada, puedes ver en cualquier momento esta actividad"
+            android:text="@string/final_walkthrough_text"
             android:textAlignment="center"
             android:textColor="@color/textColor"
             android:textSize="14sp"

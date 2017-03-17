@@ -65,7 +65,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre de Usuario"
+                android:text="@string/hint_email"
                 android:gravity="center_horizontal"
                 android:textSize="11sp"
                 android:textColor="@color/textColorSecondary"
@@ -92,7 +92,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clave de Acceso"
+                android:text="@string/hint_password"
                 android:gravity="center_horizontal"
                 android:textSize="11sp"
                 android:textColor="@color/textColorSecondary"
@@ -114,7 +114,7 @@
     </LinearLayout>
 
     <Button
-        android:text="ENTRAR"
+        android:text="@string/btn_sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginBtn"
@@ -135,7 +135,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿OLVIDASTE LA CLAVE?"
+            android:text="@string/btn_forget_password"
             android:layout_weight="50"
             android:gravity="left"
             android:textColor="@color/textColorSecondary"
@@ -143,7 +143,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="REGISTRARME"
+            android:text="@string/btn_sign_up"
             android:layout_weight="50"
             android:gravity="right"
             android:textColor="@color/colorAccent"

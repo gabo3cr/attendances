@@ -4,8 +4,62 @@
     <string name="hint_name">Full Name</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
+    <string name="hint_search_student">Identificación del Estudiante</string>
     <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_sign_in">Sign Ip</string>
+    <string name="btn_next">Siguiente</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="finger_print_on">ENCENDIDO</string>
+    <string name="finger_print_off">APAGADO</string>
+    <string name="rifd_on">ENCENDIDO</string>
+    <string name="rifd_off">APAGADO</string>
+    <string name="fingerprint_reading">LECTURA DE HUELLA</string>
+    <string name="card_reading">LECTURA DE TARJETA</string>
+    <string name="user_name_login">Nombre de Usuario</string>
+    <string name="btn_forget_password">¿OLVIDASTE LA CLAVE?</string>
+    <string name="recovery_text">Recuperar Clave de Acceso</string>
+    <string name="btn_recovery_password">RECUPERAR CLAVE</string>
+    <string name="btn_register">Register</string>
+
+
+    <!--error message-->
     <string name="err_msg_name">Enter your full name</string>
     <string name="err_msg_email">Enter valid email address</string>
     <string name="err_msg_password">Enter the password</string>
+    <string name="err_msg_rifd_card">TARJETA NO REGISTRADA</string>
+    <string name="err_msg_stunden_name_no_found">EMISAEL CARRERA</string>
+
+    <!--register module-->
+    <string name="title_data_student">Datos Básicos</string>
+    <string name="title_data_parent">Datos del Representante</string>
+    <string name="register_user_name">Emisael Jesus Carrera Ramones</string>
+    <string name="title_data_biometric">Datos Biométricos</string>
+    <string name="title_data_rifd">Configuración de la Tarjeta</string>
+
+    <string name="first_name">PRIMER NOMBRE</string>
+    <string name="middle_name">SEGUNDO NOMBRE</string>
+    <string name="last_name">PRIMER APELLIDO</string>
+    <string name="second_surname">SEGUNDO APELLIDO</string>
+    <string name="birthdate">FECHA DE NACIMIENTO</string>
+    <string name="sex">SEXO</string>
+    <string name="sex_M">Masculono</string>
+    <string name="sex_F">Femenino</string>
+    <string name="parent_phone">NUMERO DE TELEFONO</string>
+    <string name="parent_email">CORREO ELECTRONICO</string>
+    <string name="user_role">Software Engineer</string>
+    <string name="right_finger_print">HUELLA DIGITAL DEL PULGAR DERECHO</string>
+    <string name="identification_card_title">CARNET DE IDENTIFICACION</string>
+
+    <string name="check_student_name">Chequea si el estudiante existe en los registros:</string>
+    <string name="new_student_text">Es un estudiante nuevo,</string>
+    
+    <string name="student_name_validation">Emisael Carrera</string>
+
+    <!--wizard-->
+    <string name="finger_text">Registra las huellas dactilares como herramienta de acceso</string>
+    <string name="rfid_text">Configura tarjetas RFID para permitir también el acceso mediante radio frecuencia</string>
+    <string name="final_walkthrough_text">La asistencia de tus estudiantes es automatizada, puedes ver en cualquier momento esta actividad</string>
+
+
+
 </resources>
