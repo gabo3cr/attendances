@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">Floating Labels</string>
-    <string name="action_settings">Settings</string>
-    <string name="hint_name">Full Name</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Password</string>
+    <string name="app_name">Reaxium School Attendance</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="hint_name">Nombre Completo</string>
+    <string name="hint_username">Nombre de Usuario</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_password">Clave de Acceso</string>
     <string name="hint_search_student">Identificación del Estudiante</string>
-    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_sign_up">Registrarme</string>
     <string name="btn_sign_in">Sign Ip</string>
     <string name="btn_next">Siguiente</string>
     <string name="btn_continue">Continuar</string>
@@ -19,7 +20,7 @@
     <string name="btn_forget_password">¿OLVIDASTE LA CLAVE?</string>
     <string name="recovery_text">Recuperar Clave de Acceso</string>
     <string name="btn_recovery_password">RECUPERAR CLAVE</string>
-    <string name="btn_register">Register</string>
+    <string name="btn_register">Registrar</string>
 
 
     <!--error message-->

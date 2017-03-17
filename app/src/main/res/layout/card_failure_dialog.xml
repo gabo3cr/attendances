@@ -27,7 +27,8 @@
             android:layout_below="@+id/error_card_register"
             android:layout_centerInParent="true"
             android:id="@+id/error_text_card"
-            android:textStyle="normal|bold" />
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
     </LinearLayout>
 
 </FrameLayout>

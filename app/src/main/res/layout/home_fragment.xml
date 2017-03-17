@@ -93,13 +93,13 @@
                         android:layout_gravity="center" />
 
                     <ImageView
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        app:srcCompat="@drawable/times_ic"
+                        app:srcCompat="@drawable/times_sm_ic"
                         android:id="@+id/fingerprintOff"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:visibility="invisible" />
+                        android:visibility="invisible"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
                 </FrameLayout>
 
                 <LinearLayout
@@ -114,7 +114,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fingerprint_reading"
                         android:textSize="16dp"
-                        android:textColor="@color/textColor"/>
+                        android:textColor="@color/textColor"
+                        android:textAllCaps="true" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -122,7 +123,8 @@
                         android:text="@string/finger_print_on"
                         android:textSize="20sp"
                         android:textColor="@color/green"
-                        android:textStyle="normal|bold" />
+                        android:textStyle="normal|bold"
+                        android:textAllCaps="true" />
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -153,16 +155,15 @@
                         android:src="@drawable/rfid_signal"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:alpha="0.8" />
+                        android:layout_gravity="center" />
                     <ImageView
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        app:srcCompat="@drawable/times_ic"
+                        app:srcCompat="@drawable/times_sm_ic"
                         android:id="@+id/rfidOff"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:visibility="visible" />
+                        android:visibility="visible"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
                 </FrameLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -176,7 +177,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/card_reading"
                         android:textSize="16dp"
-                        android:textColor="@color/textColor"/>
+                        android:textColor="@color/textColor"
+                        android:textAllCaps="true" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -184,7 +186,8 @@
                         android:text="@string/rifd_off"
                         android:textSize="20sp"
                         android:textColor="@color/red"
-                        android:textStyle="normal|bold" />
+                        android:textStyle="normal|bold"
+                        android:textAllCaps="true" />
                 </LinearLayout>
             </LinearLayout>
             <View
