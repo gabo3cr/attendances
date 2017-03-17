@@ -112,14 +112,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LECTURA DE HUELLA"
+                        android:text="@string/fingerprint_reading"
                         android:textSize="16dp"
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="ENCENDIDO"
+                        android:text="@string/finger_print_on"
                         android:textSize="20sp"
                         android:textColor="@color/green"
                         android:textStyle="normal|bold" />
@@ -174,14 +174,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LECTURA DE TARJETA"
+                        android:text="@string/card_reading"
                         android:textSize="16dp"
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="APAGADO"
+                        android:text="@string/rifd_off"
                         android:textSize="20sp"
                         android:textColor="@color/red"
                         android:textStyle="normal|bold" />

@@ -74,7 +74,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registra las huellas dactilares como herramienta de acceso"
+            android:text="@string/finger_text"
             android:textAlignment="center"
             android:textColor="@color/textColor"
             android:textSize="14sp"

@@ -54,7 +54,7 @@
                 android:id="@+id/basicDataSummary">
 
                 <TextView
-                    android:text="Datos Básicos"
+                    android:text="@string/title_data_student"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"
@@ -81,7 +81,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PRIMER NOMBRE"
+                        android:text="@string/first_name"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -106,7 +106,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SEGUNDO NOMBRE"
+                        android:text="@string/middle_name"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -131,7 +131,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PRIMER APELLIDO"
+                        android:text="@string/last_name"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -156,7 +156,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SEGUNDO APELLIDO"
+                        android:text="@string/second_surname"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -180,7 +180,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="FECHA DE NACIMIENTO"
+                        android:text="@string/birthdate"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -206,7 +206,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SEXO"
+                        android:text="@string/sex"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -216,7 +216,7 @@
                         android:ems="10"
                         android:layout_width="wrap_content"
                         android:textSize="12sp"
-                        android:text="Masculino"
+                        android:text="@string/sex_F"
                         android:textColor="@color/textColor"
                         android:layout_marginTop="10dp"
                         android:gravity="center_horizontal" />
@@ -236,7 +236,7 @@
                 android:visibility="visible">
 
                 <TextView
-                    android:text="Datos del Representante"
+                    android:text="@string/title_data_parent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
@@ -253,7 +253,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PRIMER NOMBRE"
+                        android:text="@string/first_name"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -279,7 +279,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SEGUNDO NOMBRE"
+                        android:text="@string/middle_name"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -305,7 +305,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PRIMER APELLIDO"
+                        android:text="@string/last_name"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -330,7 +330,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SEGUNDO APELLIDO"
+                        android:text="@string/second_surname"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -355,7 +355,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NUMERO DE TELEFONO"
+                        android:text="@string/parent_phone"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -380,7 +380,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CORREO ELECTRONICO"
+                        android:text="@string/parent_email"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -410,7 +410,7 @@
                 android:id="@+id/biometricValidation">
 
                 <TextView
-                    android:text="Datos Biométricos"
+                    android:text="@string/title_data_biometric"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
@@ -427,7 +427,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="HUELLA DIGITAL DEL PULGAR DERECHO"
+                        android:text="@string/right_finger_print"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"
@@ -472,7 +472,7 @@
                 android:paddingBottom="40dp">
 
                 <TextView
-                    android:text="Configuración de la Tarjeta"
+                    android:text="@string/title_data_rifd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
@@ -489,7 +489,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CARNET DE IDENTIFICACION"
+                        android:text="@string/identification_card_title"
                         android:gravity="center_horizontal"
                         android:textSize="10sp"
                         android:textColor="@color/textColorSecondary"

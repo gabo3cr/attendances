@@ -21,7 +21,7 @@
         android:textSize="12sp"
         android:textColor="@color/textColor"
         android:textColorHint="@color/textColorSecondary"
-        android:hint="Identificación del Estudiante"
+        android:hint="@string/hint_search_student"
         android:drawableLeft="@drawable/search_icon_input"
         android:background="@drawable/input_shape_bordered"
         android:drawablePadding="0dp"

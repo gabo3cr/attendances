@@ -64,7 +64,7 @@
             android:layout_marginRight="20dp">
 
             <TextView
-                android:text="Datos Básicos"
+                android:text="@string/title_data_student"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
@@ -80,7 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PRIMER NOMBRE"
+                    android:text="@string/first_name"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -105,7 +105,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SEGUNDO NOMBRE"
+                    android:text="@string/middle_name"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -130,7 +130,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PRIMER APELLIDO"
+                    android:text="@string/last_name"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -155,7 +155,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SEGUNDO APELLIDO"
+                    android:text="@string/second_surname"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -181,7 +181,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FECHA DE NACIMIENTO"
+                    android:text="@string/birthdate"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -252,7 +252,7 @@
                                 android:layout_width="1dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
-                                android:text="Masculino"
+                                android:text="@string/sex_M"
                                 android:textColor="@color/textColor"
                                 app:buttonTint="@color/colorPrimaryDark"
                                 android:gravity="center_vertical|center_horizontal|start"
@@ -296,7 +296,7 @@
             android:layout_marginTop="30dp">
 
             <TextView
-                android:text="Datos del Representante"
+                android:text="@string/title_data_parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -411,7 +411,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NUMERO DE TELEFONO"
+                    android:text="@string/parent_phone"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -425,7 +425,7 @@
                     android:layout_width="match_parent"
                     android:textSize="12sp"
                     android:paddingBottom="20dp"
-                    android:text="+584125178020"
+                    android:text="hcarrillo@t4ss.com"
                     android:textColor="@color/textColor" />
             </LinearLayout>
 
@@ -436,7 +436,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CORREO ELECTRONICO"
+                    android:text="@string/parent_email"
                     android:gravity="center_horizontal"
                     android:textSize="10sp"
                     android:textColor="@color/textColorSecondary"
@@ -450,7 +450,7 @@
                     android:layout_width="match_parent"
                     android:textSize="12sp"
                     android:paddingBottom="20dp"
-                    android:text="emisael@t4ss.com"
+                    android:text="+29393921003"
                     android:textColor="@color/textColor" />
             </LinearLayout>
 
