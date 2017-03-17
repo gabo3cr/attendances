@@ -87,17 +87,6 @@
                     android:textColor="@color/textColor"
                     android:textSize="14sp" />
 
-                <TextView
-                    android:id="@+id/finger_status"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/finger_read"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="ENCENDIDO"
-                    android:textColor="@color/green"
-                    android:textSize="18sp" />
-
                 <RelativeLayout
                     android:id="@+id/separator"
                     android:layout_width="220dp"
@@ -116,12 +105,24 @@
                     android:id="@+id/imageView2"
                     android:layout_width="80dp"
                     android:layout_height="45dp"
-                    android:src="@drawable/fingerprint"
+                    android:src="@drawable/ic_fingerprint"
                     android:layout_marginRight="168dp"
                     android:layout_marginEnd="168dp"
                     android:layout_alignTop="@+id/finger_read"
                     android:layout_alignRight="@+id/separator"
                     android:layout_alignEnd="@+id/separator" />
+
+                <TextView
+                    android:id="@+id/finger_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENCENDIDO"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/finger_read"
+                    android:layout_alignStart="@+id/separator"
+                    android:layout_marginStart="42dp" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -148,17 +149,6 @@
                 android:textColor="@color/textColor"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/rfid_status"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rfid_read"
-                android:layout_marginTop="5dp"
-                android:gravity="center"
-                android:text="ENCENDIDO"
-                android:textColor="@color/green"
-                android:textSize="18sp" />
-
             <RelativeLayout
                 android:id="@+id/separator2"
                 android:layout_width="220dp"
@@ -182,6 +172,18 @@
                 android:layout_above="@+id/separator2"
                 android:layout_alignRight="@+id/separator2"
                 android:layout_alignEnd="@+id/separator2" />
+
+            <TextView
+                android:id="@+id/rfid_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENCENDIDO"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:layout_below="@+id/rfid_read"
+                android:layout_alignStart="@+id/separator2"
+                android:layout_marginStart="39dp" />
         </RelativeLayout>
 
         <LinearLayout
