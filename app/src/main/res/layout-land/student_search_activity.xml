@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/studentSearchInput"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColorSecondary"
+        android:hint="Identificación del Estudiante"
+        android:drawableLeft="@drawable/search_icon_input"
+        android:background="@drawable/input_shape_bordered"
+        android:drawablePadding="0dp"
+        android:padding="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/studentSearchInput"
+        android:layout_marginTop="20dp"></LinearLayout>
+</RelativeLayout>

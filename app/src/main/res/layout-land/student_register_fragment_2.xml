@@ -30,7 +30,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_alignParentBottom="true"
-                android:layout_height="100dp">
+                android:layout_height="90dp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -92,7 +92,8 @@
                 android:id="@+id/textView2"
                 android:layout_marginBottom="20dp"
                 android:textSize="36sp"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textStyle="normal|bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -110,16 +111,16 @@
 
                 <RelativeLayout
                     android:layout_marginTop="40dp"
-                    android:layout_width="250dp"
-                    android:layout_height="250dp">
+                    android:layout_width="275dp"
+                    android:layout_height="275dp">
 
                     <RelativeLayout
                         android:foreground="@drawable/box_container"
                         android:background="@color/lightGray"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:layout_width="300dp"
-                        android:layout_height="300dp">
+                        android:layout_width="250dp"
+                        android:layout_height="250dp">
 
                         <TextView
                             android:text="Esperando lectura de huella"
@@ -175,8 +176,8 @@
                             android:layout_height="match_parent"
                             android:src="@drawable/fingerprint_real"
                             android:background="@android:color/white"
-                            android:id="@+id/studentFingerPrintImg"
-                            android:visibility="gone" />
+                            android:id="@+id/studentFingerprintImg"
+                            android:visibility="visible" />
 
                     </RelativeLayout>
 
@@ -186,16 +187,14 @@
                         android:elevation="0dp"
                         android:id="@+id/checked"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginRight="4dp"
-                        android:layout_marginBottom="4dp"
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
-                        android:visibility="gone">
+                        android:visibility="visible"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
                         <ImageView
                             android:src="@drawable/tick_icon_sm"
                             android:layout_gravity="center_vertical|center_horizontal"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp" />
+                            android:layout_width="32dp"
+                            android:layout_height="32dp" />
                     </FrameLayout>
                 </RelativeLayout>
 

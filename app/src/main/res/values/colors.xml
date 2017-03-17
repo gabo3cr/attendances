@@ -17,5 +17,7 @@
     <color name="colorPrimary50">#77e7af00</color>
 
     <color name="green">#B8E986</color>
+    <color name="black90">#e6000000</color>
+    <color name="white98">#faffffff</color>
 
 </resources>

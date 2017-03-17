@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white98">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/circular_shadowed_white"
+            android:layout_height="206dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="201dp">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_picture"
+                app:civ_border_width="0dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emisael Carrera"
+            android:textColor="@color/textColor"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Engineer"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="18sp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/tick_lg_bold"
+                android:id="@+id/imageView4"
+                android:elevation="14dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/button2"
+                android:background="@drawable/circle_button_accent"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <TextView
+            android:text="ASISTENCIA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:text="VERIFICADA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/textColor" />
+
+    </LinearLayout>
+
+</FrameLayout>

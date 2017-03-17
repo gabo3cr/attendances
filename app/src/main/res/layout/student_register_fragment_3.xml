@@ -7,17 +7,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="260dp"
-            android:id="@+id/studentProfileLayout">
+            android:id="@+id/studentProfileLayout"
+            android:background="@drawable/box_shadowed_bottom"
+            android:paddingBottom="4dp">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:src="@drawable/profile_picture"
+                android:src="@drawable/child2"
                 android:id="@+id/studentPicture"
                 android:scaleType="centerCrop"
                 android:layout_height="match_parent" />
@@ -25,13 +27,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_alignParentBottom="true"
-                android:layout_height="120dp">
-                <ImageView
+                android:layout_height="60dp">
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:src="@drawable/gradient_white_transparent"
-                    android:id="@+id/gradientStudentPicture"
                     android:layout_height="match_parent"
-                    android:alpha="0.8" />
+                    android:background="@android:color/white"
+                    android:alpha="0.9">
+
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -64,19 +68,13 @@
 
         </RelativeLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/lightGray" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="40dp"
-            android:gravity="center_horizontal">
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/verylightGray">
 
             <TextView
                 android:text="Configuración de la Tarjeta"
@@ -85,7 +83,8 @@
                 android:id="@+id/textView2"
                 android:layout_marginBottom="20dp"
                 android:textSize="18sp"
-                android:textColor="@color/textColor" />
+                android:textColor="@color/textColor"
+                android:textStyle="normal|bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -168,7 +167,7 @@
                             android:src="@drawable/rfid_signal"
                             android:background="@android:color/white"
                             android:id="@+id/studentRFIDCard"
-                            android:visibility="visible"
+                            android:visibility="invisible"
                             android:padding="15dp" />
 
                     </RelativeLayout>
@@ -183,7 +182,7 @@
                         android:layout_marginBottom="4dp"
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:visibility="visible">
+                        android:visibility="invisible">
                         <ImageView
                             android:src="@drawable/tick_icon_sm"
                             android:layout_gravity="center_vertical|center_horizontal"

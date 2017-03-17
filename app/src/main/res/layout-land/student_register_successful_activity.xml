@@ -32,23 +32,23 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center_horizontal"
-            android:paddingBottom="100dp"
+            android:paddingBottom="120dp"
             android:layout_centerInParent="true">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:gravity="center_horizontal"
-                android:textSize="50dp"
                 android:text="Bien Hecho!"
-                android:textStyle="normal|bold" />
+                android:textStyle="normal|bold"
+                android:textSize="70dp" />
             <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:gravity="center_horizontal"
-                android:textSize="24sp"
-                android:text="SE HA REGISTRADO EL ESTUDIANTE" />
+                android:textSize="36sp"
+                android:text="SE HA REGISTRADO EL ESTUDIANTE"
+                android:layout_width="360dp" />
         </LinearLayout>
 
         <ImageView
@@ -77,7 +77,7 @@
             android:id="@+id/registerStudentBtn"
             android:background="@drawable/button_black_cornered"
             android:textColor="@android:color/white"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_width="330dp"
             style="?android:attr/borderlessButtonStyle" />
 
@@ -87,9 +87,9 @@
             android:id="@+id/mainMenuBtn"
             android:background="@drawable/button_white"
             android:textColor="@color/colorAccent"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_width="330dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             style="?android:attr/borderlessButtonStyle" />
 
     </LinearLayout>
