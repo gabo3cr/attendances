@@ -326,8 +326,32 @@
 
             <FrameLayout
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/searchBtnActive"
+                android:elevation="8dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/filterStudentBtnActive"
+                    android:background="@drawable/circle_button_accent"
+                    android:elevation="16dp" />
+
+                <ImageView
+                    app:srcCompat="@drawable/search_icon_bold"
+                    android:elevation="24dp"
+                    android:layout_gravity="center"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
-                android:id="@+id/searchBtnActivated"
+                android:id="@+id/searchBtnInactive"
                 android:elevation="8dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp">
@@ -335,7 +359,7 @@
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/filterStudentBtn"
+                    android:id="@+id/filterStudentBtnInactive"
                     android:background="@drawable/circle_white"
                     android:elevation="16dp" />
 
@@ -352,7 +376,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:id="@+id/searchInputContainer"
+                android:id="@+id/searchInputInactive"
                 android:layout_marginTop="70dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
