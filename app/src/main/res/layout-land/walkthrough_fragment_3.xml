@@ -1,66 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@android:color/white">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_gravity="center_vertical"
+    android:clickable="true"
+    android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:clickable="true"
-        android:orientation="vertical">
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/walkthoughIndicatorBar">
         <ImageView
-            android:padding="5dp"
-            android:id="@+id/controller_active"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            app:srcCompat="@drawable/circle_white"
+            android:id="@+id/walkthroughIndicator1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:tint="@color/lightGray" />
+        <ImageView
+            app:srcCompat="@drawable/circle_white"
+            android:id="@+id/walkthroughIndicator2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:tint="@color/lightGray"
+            android:layout_width="10dp"
+            android:elevation="24dp"
+            android:layout_height="10dp" />
+        <ImageView
+            app:srcCompat="@drawable/circle_white"
+            android:id="@+id/walkthroughIndicator3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:tint="@color/colorPrimary"
+            android:layout_width="10dp"
+            android:elevation="24dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:text="Continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextBtn"
+        android:background="@drawable/button_black"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/nextBtn"
+        android:layout_below="@+id/walkthoughIndicatorBar"
+        android:gravity="center"
+        android:padding="20dp">
+        <ImageView
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/circle_white"
-            android:adjustViewBounds="false"
-            android:cropToPadding="false" />
-
-        <RelativeLayout
-            android:layout_centerInParent="true"
-            android:gravity="center_vertical|center_horizontal|center"
-            android:layout_below="@id/controller_active"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_marginTop="30dp"
-                android:layout_below="@id/checklist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="La asistencia de tus estudiantes es automatizada, puedes ver en cualquier momento esta actividad."
-                android:textAlignment="center"
-                android:textColor="@color/textColor"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/checklist"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/attendances_student"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
-        </RelativeLayout>
-
-        <Button
-            android:text="Siguiente"
+            android:src="@drawable/checklist"
+            android:layout_marginTop="40dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/finish_step"
-            android:background="@drawable/button_black"
-            android:layout_alignParentBottom="true"
-            android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:text="La asistencia de tus estudiantes es automatizada, puedes ver en cualquier momento esta actividad"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:id="@+id/textView"
+            android:layout_above="@+id/nextBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
 
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>
