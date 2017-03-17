@@ -264,8 +264,7 @@
                     <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="1dp"
-                        android:layout_marginTop="80dp">
+                        android:layout_marginBottom="1dp">
 
                         <LinearLayout
                             android:orientation="vertical"
@@ -307,8 +306,7 @@
                     <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="1dp"
-                        android:layout_marginTop="80dp">
+                        android:layout_marginBottom="1dp">
 
                         <LinearLayout
                             android:orientation="vertical"
@@ -328,17 +326,17 @@
 
             <FrameLayout
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="19dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:id="@+id/searchBtnContainer"
-                android:elevation="8dp">
+                android:layout_marginTop="25dp"
+                android:id="@+id/searchBtnActivated"
+                android:elevation="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
 
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/filterStudentBtn"
-                    android:background="@drawable/circle_button_accent"
+                    android:background="@drawable/circle_white"
                     android:elevation="16dp" />
 
                 <ImageView
@@ -346,8 +344,9 @@
                     android:id="@+id/imageView2"
                     android:elevation="24dp"
                     android:layout_gravity="center"
-                    android:layout_width="42dp"
-                    android:layout_height="42dp" />
+                    android:tint="@color/textColorSecondary"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
             </FrameLayout>
 
             <FrameLayout
@@ -358,7 +357,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/home_search_input_container"
-                android:visibility="visible">
+                android:visibility="invisible">
 
                 <EditText
                     android:layout_width="match_parent"
