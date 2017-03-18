@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/brand_header"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/brand_header"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/circle_big_mask"
+                android:id="@+id/header_bg"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-160dp"
+                android:layout_marginLeft="-100dp"
+                android:layout_marginRight="-100dp"
+                android:tint="@color/textColor"
+                android:layout_height="320dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_centerInParent="false"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="right">
+
+                        <TextView
+                            android:text="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/gradeNumber"
+                            android:textSize="80sp"
+                            android:textStyle="normal|bold"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:text="°"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/number_symbol"
+                            android:textSize="80sp"
+                            android:textStyle="normal|bold"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="-4dp"
+                            android:layout_marginRight="-4dp" />
+
+                        <TextView
+                            android:text="A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/gradeSection"
+                            android:textSize="80sp"
+                            android:textStyle="normal|bold"
+                            android:textColor="@color/dividerColor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:text="Ana Maria"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teacherNames"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Prato Milito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teacherLastnames"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Maestra Básica"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teacherRole"
+                            android:textColor="@color/dividerColor"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:text="EF20348739"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teacherId"
+                            android:textColor="@color/dividerColor"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Jueves 04 de Marzo, 2017"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/currentDate"
+                    android:textColor="@color/dividerColor"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:layout_marginTop="-10dp" />
+
+                <TextView
+                    android:text="Turno de la Mañana"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/textColorSecondary"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:id="@+id/attendanceTurn" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/verylightGray"
+            android:layout_below="@id/brand_header"
+            android:paddingBottom="1dp"
+            android:layout_marginTop="10dp">
+
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+            <include layout="@layout/manual_attendance_student_card_checked"/>
+            <include layout="@layout/manual_attendance_student_card_checked"/>
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+            <include layout="@layout/manual_attendance_student_card_checked"/>
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+            <include layout="@layout/manual_attendance_student_card_checked"/>
+            <include layout="@layout/manual_attendance_student_card_unchecked"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
