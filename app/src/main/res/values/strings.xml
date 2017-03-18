@@ -6,6 +6,7 @@
     <string name="hint_email">Correo Electrónico</string>
     <string name="hint_password">Clave de Acceso</string>
     <string name="hint_search_student">Identificación del Estudiante</string>
+    <string name="hint_search_grade">Identificación del Grado y/o Sección</string>
     <string name="btn_sign_up">Registrarme</string>
     <string name="btn_sign_in">Sign Ip</string>
     <string name="btn_next">Siguiente</string>

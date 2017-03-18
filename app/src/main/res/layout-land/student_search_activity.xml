@@ -2,15 +2,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:background="@android:color/white"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="60dp">
+
+            <include layout="@layout/student_search_card"/>
+            <include layout="@layout/student_search_card"/>
+            <include layout="@layout/student_search_card"/>
+            <include layout="@layout/student_search_card"/>
+            <include layout="@layout/student_search_card"/>
+            <include layout="@layout/student_search_card"/>
+            <include layout="@layout/student_search_card"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:elevation="0dp"
+        android:id="@+id/block_white"
+        android:layout_height="50dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_white_transparent"
+        android:elevation="0dp"
+        android:scaleY="-1"
+        android:layout_marginTop="50dp"
+        android:id="@+id/gradient_top_white"
+        android:layout_height="40dp">
+
+    </FrameLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:ems="10"
         android:id="@+id/studentSearchInput"
         android:layout_marginTop="20dp"
@@ -28,12 +70,17 @@
         android:padding="4dp"
         android:gravity="center_vertical|center_horizontal"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:elevation="0dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/studentSearchInput"
-        android:layout_marginTop="20dp"></LinearLayout>
+        android:id="@+id/gradient_bottom_white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:background="@drawable/gradient_white_transparent"
+        android:elevation="0dp">
+
+    </FrameLayout>
+
 </RelativeLayout>
