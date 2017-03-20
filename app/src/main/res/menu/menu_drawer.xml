@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group
+        android:id="@+id/login_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/action_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_drawer_home" />
+
+    </group>
+
+    <group
+        android:id="@+id/setting_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/action_locked_home"
+            android:icon="@drawable/locked_icon"
+            android:title="@string/menu_drawer_block_home" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/manual_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/action_manual"
+            android:icon="@drawable/manual_icon"
+            android:title="@string/menu_drawer_manual_attendance" />
+
+    </group>
+
+    <group
+        android:id="@+id/register_student_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/add_student"
+            android:icon="@drawable/plus_icon"
+            android:title="@string/menu_drawer_add_student" />
+
+    </group>
+
+    <group
+        android:id="@+id/search_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/search_student"
+            android:icon="@drawable/search_icon_menu"
+            android:title="@string/menu_drawer_add_student" />
+
+    </group>
+
+    <group
+        android:id="@+id/profile_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/profile_student"
+            android:icon="@drawable/search_icon_menu"
+            android:title="@string/menu_drawer_profile_student" />
+
+    </group>
+
+    <group
+        android:id="@+id/settings_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/setting_icon"
+            android:title="@string/menu_drawer_settings" />
+
+    </group>
+
+    <group
+        android:id="@+id/logout_menu_container"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        app:itemBackground="@android:color/black">
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_icon"
+            android:title="@string/menu_drawer_logout" />
+
+    </group>
+
+</menu>

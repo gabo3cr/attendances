@@ -63,5 +63,12 @@
     <string name="final_walkthrough_text">La asistencia de tus estudiantes es automatizada, puedes ver en cualquier momento esta actividad</string>
 
 
-
+    <!--menu-->
+    <string name="menu_drawer_home">Inicio</string>
+    <string name="menu_drawer_block_home">Bloquear Inicio</string>
+    <string name="menu_drawer_manual_attendance">Asistencia Manual</string>
+    <string name="menu_drawer_add_student">Registrar Usuario</string>
+    <string name="menu_drawer_profile_student">Perfil</string>
+    <string name="menu_drawer_settings">Configuracion</string>
+    <string name="menu_drawer_logout">Salir</string>
 </resources>
