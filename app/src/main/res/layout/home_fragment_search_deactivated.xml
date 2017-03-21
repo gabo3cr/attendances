@@ -61,7 +61,7 @@
         android:layout_below="@+id/brand_header">
 
         <RelativeLayout
-            android:layout_width="0dp"
+            android:layout_width="20dp"
             android:layout_height="match_parent"
             android:layout_weight="33"
             android:background="@drawable/gray_container"

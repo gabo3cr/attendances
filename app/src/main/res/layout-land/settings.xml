@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/brand_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/header_bg"
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="95dp"
+            app:srcCompat="@drawable/circle_big_mask" />
+
+        <ImageView
+            android:id="@+id/brand_logo"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            app:srcCompat="@drawable/logo_icon" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Confuguracion"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:src="@drawable/left_arrow" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header_bg"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/general_container"
+                android:layout_width="800dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="General"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Sonidos"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_on"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/switch_on"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lightGray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Notificaciones"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_off"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:checked="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/switch_off"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lightGray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/history_container"
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Historial"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/turn_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="NOMBRE DEL TURNO"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/turn_input"
+                    android:text="Turno de la Mañana"
+                    android:textColor="@color/textColor" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/box"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lightGray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/user_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="DIA DE LA SEMANA"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="500dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/monday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_dark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tuesday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/monday">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_dark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="M"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wednesday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tuesday">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_dark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/thursday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/wednesday">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_dark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="J"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/friday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/thursday">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_dark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="V"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/saturday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/friday">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sunday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/saturday">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="D"
+                        android:textColor="@color/white98"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/check_icon"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="800dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/sunday"
+                android:layout_marginTop="15dp"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/date_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="HORA DE INICIO"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/clock_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/clock_image"
+                    android:gravity="center"
+                    android:text="06:30 am"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="800dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/hour"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightGray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/hour_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="HORA DE CIERRE"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="800dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/clock_close"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/close_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/clock_close"
+                    android:gravity="center"
+                    android:text="12:30 am"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/clock_close"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightGray" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="410dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_accent_cornered"
+                android:text="AGREGAR OTRO TURNO"
+                android:textColor="@color/white98"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
